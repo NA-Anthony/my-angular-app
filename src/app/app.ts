@@ -1,12 +1,13 @@
-import { Component, signal } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { Component } from '@angular/core';
+import { GreetingComponent } from './greeting/greeting';
+import { CalculatorComponent } from './calculator/calculator';
+import { ChatComponent } from './chat/chat';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  standalone: true,
+  imports: [GreetingComponent, CalculatorComponent,ChatComponent],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
-export class App {
-  protected readonly title = signal('my-angular-app');
-}
+export class AppComponent {}

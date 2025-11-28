@@ -1,0 +1,16 @@
+.highlight {
+    color: #007bff;
+    font-weight: bold;
+  }
+  
+  h1 {
+    color: #333;
+    text-align: center;
+  }
+  
+  p {
+    color: #666;
+    text-align: center;
+    font-size: 18px;
+  }
+  

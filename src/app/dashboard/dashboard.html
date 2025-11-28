@@ -1,0 +1,14 @@
+<div class="dashboard" style="margin-top: 40px;">
+    <h2>Dashboard des calculs</h2>
+    <div id="dashboard-summary">
+      <span id="total-calculs">
+        {{ history.length > 0 ? history.length + ' calcul(s) effectué(s)' : "Aucun calcul effectué pour l'instant." }}
+      </span>
+    </div>
+    <ul id="calculs-list" style="list-style: none; padding: 0;">
+      <li *ngFor="let item of history">
+        {{ item.num1 }} + {{ item.num2 }} = {{ item.sum }}
+      </li>
+    </ul>
+  </div>
+  
